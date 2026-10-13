@@ -53,5 +53,6 @@ function apply(){const q=search.value.toLowerCase().trim();let count=0;cards.for
 search.addEventListener('input',apply);filters.forEach(btn=>btn.addEventListener('click',()=>{category=btn.dataset.cat;filters.forEach(b=>b.classList.toggle('active',b===btn));apply()}));
 const modal=document.getElementById('modal');document.querySelectorAll('.read').forEach(btn=>btn.addEventListener('click',()=>{document.getElementById('modalTitle').textContent=btn.dataset.title;document.getElementById('modalText').textContent=btn.dataset.text;modal.classList.add('show')}));function closeModal(){modal.classList.remove('show')}document.getElementById('close').addEventListener('click',closeModal);modal.addEventListener('click',e=>{if(e.target===modal)closeModal()});document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal()});
 </script>
+<a href="como-aprender-python-desde-cero.html">Cómo aprender Python desde cero</a>
 </body>
 </html>
